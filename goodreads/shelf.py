@@ -12,4 +12,5 @@ class GoodreadsShelf:
 
     @property
     def count(self):
-        return self._shelf_dict['@count']
+        return int(self._shelf_dict['book_count']['#text'])
+
